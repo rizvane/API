@@ -19,9 +19,9 @@ services:
           PHP_DISPLAY_ERRORS: 1
 
   database:
-      image: mysql:5.7
+      image: mariadb
       volumes:
-          - ./docker/database:/var/lib/mysql
+          - ./docker/database:/var/lib/mariadb
       environment:
           MYSQL_ROOT_PASSWORD: root
           MYSQL_DATABASE: mydatabase
