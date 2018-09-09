@@ -2,17 +2,13 @@
 
 namespace App\Entity;
 
-use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
- * @UniqueEntity("email")
- * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
+ * @ORM\Entity(repositoryClass="App\Repository\MasterRepository")
  */
-class User implements UserInterface
+class Master implements UserInterface
 {
     /**
      * @ORM\Id()
@@ -32,14 +28,9 @@ class User implements UserInterface
     private $lastname;
 
     /**
-     * @ORM\Column(type="datetime", nullable=true)
+     * @ORM\Column(type="string", length=255)
      */
-    private $birthday;
-
-    /**
-     * @ORM\Column(type="simple_array")
-     */
-    private $roles;
+    private $email;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -47,22 +38,9 @@ class User implements UserInterface
     private $apiKey;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\OneToOne(targetEntity="App\Entity\Company", mappedBy="Master", cascade={"persist", "remove"})
      */
-    private $email;
-
-    /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Article", mappedBy="user")
-     */
-    private $articles;
-
-    public function __construct()
-    {
-        $this->roles = array('ROLE_USER');
-        $this->apiKey = uniqid('', true);
-        $this->articles = new ArrayCollection();
-
-    }
+    private $company;
 
     public function getId(): ?int
     {
@@ -93,26 +71,14 @@ class User implements UserInterface
         return $this;
     }
 
-    public function getBirthday(): ?\DateTimeInterface
+    public function getEmail(): ?string
     {
-        return $this->birthday;
+        return $this->email;
     }
 
-    public function setBirthday(?\DateTimeInterface $birthday): self
+    public function setEmail(string $email): self
     {
-        $this->birthday = $birthday;
-
-        return $this;
-    }
-
-    public function getRoles(): ?array
-    {
-        return $this->roles;
-    }
-
-    public function setRoles(array $roles): self
-    {
-        $this->roles = $roles;
+        $this->email = $email;
 
         return $this;
     }
@@ -129,47 +95,43 @@ class User implements UserInterface
         return $this;
     }
 
-    public function getEmail(): ?string
+    public function getCompany(): ?Company
     {
-        return $this->email;
+        return $this->company;
     }
 
-    public function setEmail(string $email): self
+    public function setCompany(?Company $company): self
     {
-        $this->email = $email;
+        $this->company = $company;
+
+        // set (or unset) the owning side of the relation if necessary
+        $newMaster = $company === null ? null : $this;
+        if ($newMaster !== $company->getMaster()) {
+            $company->setMaster($newMaster);
+        }
 
         return $this;
     }
 
     /**
-     * @return Collection|Article[]
+     * Returns the roles granted to the user.
+     *
+     * <code>
+     * public function getRoles()
+     * {
+     *     return array('ROLE_USER');
+     * }
+     * </code>
+     *
+     * Alternatively, the roles might be stored on a ``roles`` property,
+     * and populated in any number of different ways when the user object
+     * is created.
+     *
+     * @return (Role|string)[] The user roles
      */
-    public function getArticles(): Collection
+    public function getRoles()
     {
-        return $this->articles;
-    }
-
-    public function addArticle(Article $article): self
-    {
-        if (!$this->articles->contains($article)) {
-            $this->articles[] = $article;
-            $article->setUser($this);
-        }
-
-        return $this;
-    }
-
-    public function removeArticle(Article $article): self
-    {
-        if ($this->articles->contains($article)) {
-            $this->articles->removeElement($article);
-            // set the owning side to null (unless already changed)
-            if ($article->getUser() === $this) {
-                $article->setUser(null);
-            }
-        }
-
-        return $this;
+        // TODO: Implement getRoles() method.
     }
 
     /**
@@ -204,7 +166,7 @@ class User implements UserInterface
      */
     public function getUsername()
     {
-        return $this->getEmail();
+        // TODO: Implement getUsername() method.
     }
 
     /**
