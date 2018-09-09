@@ -42,6 +42,12 @@ class Master implements UserInterface
      */
     private $company;
 
+
+    public function __construct()
+    {
+        $this->apiKey = uniqid('', true);
+    }
+
     public function getId(): ?int
     {
         return $this->id;

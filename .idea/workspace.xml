@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e84c356-9ac1-48b6-abfe-b2555b6b5858" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Controller/MastersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MastersController.php" afterDir="false" />
-    </list>
+    <list default="true" id="0e84c356-9ac1-48b6-abfe-b2555b6b5858" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -283,7 +281,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />

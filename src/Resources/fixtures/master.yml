@@ -1,0 +1,6 @@
+# /Resources/fixtures/user.yml
+App\Entity\User:
+  user_{1..100}:
+    firstname: <firstName()>
+    lastname: <lastName()>
+    email: <email()>
