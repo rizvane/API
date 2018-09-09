@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e84c356-9ac1-48b6-abfe-b2555b6b5858" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ArticleController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/UsersController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/ArticleRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resources/fixtures/user.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/users/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MastersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MastersController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,17 +30,17 @@
           <entry key="dist" value="13" />
           <entry key="dummy" value="2" />
           <entry key="env" value="2" />
-          <entry key="php" value="3213" />
-          <entry key="yaml" value="784" />
+          <entry key="php" value="3366" />
+          <entry key="yaml" value="792" />
           <entry key="yml" value="174" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="3213" />
+          <entry key="PHP" value="3366" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="XML" value="12" />
-          <entry key="YAML" value="958" />
+          <entry key="YAML" value="966" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -61,9 +51,9 @@
           <entry key="gitignore" value="2" />
           <entry key="js" value="1" />
           <entry key="json" value="1" />
-          <entry key="php" value="20" />
+          <entry key="php" value="21" />
           <entry key="phpunit" value="1" />
-          <entry key="yaml" value="6" />
+          <entry key="yaml" value="14" />
           <entry key="yml" value="2" />
         </counts>
       </usages-collector>
@@ -71,10 +61,10 @@
         <counts>
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="1" />
-          <entry key="PHP" value="22" />
+          <entry key="PHP" value="23" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="XML" value="1" />
-          <entry key="YAML" value="8" />
+          <entry key="YAML" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -88,11 +78,68 @@
     <splitter split-orientation="horizontal" split-proportion="0.80905753">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="340">
                   <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/config/packages/routing.yaml">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/config/packages/nelmio_api_doc.yaml">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/config/packages/nelmio_alice.yaml">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/config/packages/framework.yaml">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/config/routes.yaml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="170">
+                  <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/config/packages/fos_rest.yaml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="374">
+                  <caret line="22" selection-start-line="22" selection-end-line="22" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/config/packages/doctrine_migrations.yaml">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/config/packages/doctrine.yaml">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Controller/MastersController.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                  <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
                 </state>
               </provider>
             </entry>
@@ -119,7 +166,6 @@
         <option value="$PROJECT_DIR$/src/Security/TokenAuthenticator.php" />
         <option value="$PROJECT_DIR$/config/packages/sensio_framework_extra.yaml" />
         <option value="$PROJECT_DIR$/config/packages/fos_rest.yaml" />
-        <option value="$PROJECT_DIR$/config/routes.yaml" />
         <option value="$PROJECT_DIR$/src/Repository/ArticleRepository.php" />
         <option value="$PROJECT_DIR$/src/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/Controller/UsersController.php" />
@@ -133,6 +179,8 @@
         <option value="$PROJECT_DIR$/src/Entity/Master.php" />
         <option value="$PROJECT_DIR$/src/Controller/MasterController.php" />
         <option value="$PROJECT_DIR$/var/cache/dev/ContainerHFQAxRk/srcDevDebugProjectContainer.php" />
+        <option value="$PROJECT_DIR$/config/routes.yaml" />
+        <option value="$PROJECT_DIR$/src/Controller/MastersController.php" />
       </list>
     </option>
   </component>
@@ -267,6 +315,20 @@
             <path>
               <item name="api" type="b2602c69:ProjectViewProjectNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="dev" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="prod" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="docker" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -383,12 +445,12 @@
       <workItem from="1534845663848" duration="28465000" />
       <workItem from="1535357517250" duration="43000" />
       <workItem from="1536416765388" duration="2416000" />
-      <workItem from="1536485130067" duration="10048000" />
+      <workItem from="1536485130067" duration="15451000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58581000" />
+    <option name="totallyTimeSpent" value="63984000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -446,13 +508,6 @@
     <entry file="file://$PROJECT_DIR$/src/Entity/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/fos_rest.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="37" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/packages/sensio_framework_extra.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -460,20 +515,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/nelmio_alice.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Repository/ArticleRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -612,13 +657,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/MastersController.php">
+    <entry file="file://$PROJECT_DIR$/config/routes.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="e#34#82#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -626,6 +668,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/routing.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/nelmio_api_doc.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/nelmio_alice.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/framework.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/fos_rest.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/doctrine_migrations.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/doctrine.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/MastersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
         </state>
       </provider>
     </entry>
